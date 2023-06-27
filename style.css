@@ -30,21 +30,21 @@ header .dark-header
 
 .container
 {
-    width: 80vw;
+    /* width: 80vw; */
     margin: 0 auto;
     padding-top: 4em;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    overflow: hidden;
+    text-align: center;
+
 }
-.hi-there{
-    padding-top:0.5em ;
+
+.hi-there
+{
+    padding-top: 0.5em;
 }
 
 .about-me-container
 {
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 1em 0;
 }
 
@@ -66,16 +66,6 @@ header .dark-header
 
 }
 
-.flex-left
-{
-    align-items: center;
-}
-
-.img
-{
-    width: 100%;
-    /* margin-left: 2em; */
-}
 
 section
 {
@@ -100,14 +90,17 @@ section
     ;
 }
 
-.sub-description{
+.sub-description
+{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 0 18em;
     align-items: center;
 }
-.sub-desr{
+
+.sub-desr
+{
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
@@ -117,7 +110,9 @@ section
     border-radius: 5px;
 
 }
-.info-sec{
+
+.info-sec
+{
 
     padding: 3em;
     display: flex;
@@ -125,15 +120,93 @@ section
     justify-content: space-between;
 
 }
-.info-sec img{
-    width: 35%;
-    margin: 5em;
-   
+
+.stack
+{
+    padding-top: 1em;
+    text-align: center;
 }
-.dark-footer{
+
+.info-sec img
+{
+    width: 10%;
+
+}
+
+.dark-footer
+{
     background-color: black;
     padding: 5em 0;
     color: #ffff;
     text-align: center;
     overflow: hidden;
+}
+
+/* Media Queries for Small Screens */
+
+@media (max-width: 768px)
+{
+    .sub-description
+    {
+        margin: 0 10em;
+        flex-direction: column;
+    }
+    .sub-description img{
+        width: 300px;
+    }
+    .sub-desr
+    {
+        width: 300px;
+        
+    }
+}
+
+@media (max-width: 500px)
+{
+    .sub-description
+    {
+        margin: 0 5em;
+        
+    }
+
+    .sub-desr
+    {
+        
+        width: 250px;
+        
+    }
+
+    .info-sec
+    {
+        flex-direction: row;
+    }
+
+    .info-sec img
+    {
+        width: 20%;
+    }
+}
+
+@media (max-width: 320px)
+{
+    .sub-description
+    {
+        margin: 0 2em;
+    }
+
+    .sub-desr
+    {
+        width: 235px;
+    }
+
+    .info-sec
+    {
+        padding: 2em;
+    }
+
+    .info-sec img
+    {
+        width: 15%;
+        
+    }
 }
